@@ -1,11 +1,12 @@
-.error, #flash_failure {
-  @include flash($error-color);
+// Rails specific flash IDs
+#flash_failure {
+  @extend %base-error;
 }
 
-.notice, #flash_notice {
-  @include flash($notice-color);
+#flash_notice {
+  @extend %base-notice;
 }
 
-.success, #flash_success {
-  @include flash($success-color);
+#flash_success {
+  @extend %base-success;
 }

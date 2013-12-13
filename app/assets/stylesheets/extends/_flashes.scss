@@ -1,0 +1,11 @@
+%base-error {
+  @include flash($error-color);
+}
+
+%base-notice {
+  @include flash($notice-color);
+}
+
+%base-success {
+  @include flash($success-color);
+}
